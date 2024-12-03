@@ -1,0 +1,140 @@
+/* Reset some default styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Styling the todo list container */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Individual todo item */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+/* Delete button styling */
+button {
+  background-color: #ff6b6b;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3b3b;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  ul {
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Form container */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #6200ee;
+}
+
+/* Button styling */
+button {
+  background-color: #6200ee;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b00c4;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
